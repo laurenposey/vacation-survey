@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vacation Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Where should you take your next<span class="text-danger">Vacation</span>?</h1>
+      <form id="vacaSurvey">
+        <div>
+          <label>What's your favorite animal from the list below?</label>
+          <select class="form-control" id="animal">
+            <option value="greece">Goat</option>
+            <option value="peru">Alpaca</option>
+            <option value="india">Tiger</option>
+          </select>
+          <label>What activity sounds most appealing to you?</label>
+          <select class="form-control" id="activity">
+            <option value="greece">Shopping</option>
+            <option value="peru">Hiking</option>
+            <option value="india">Sightseeing</option>
+          </select>
+          <label>Which statement best describes your personality?</label>
+          <select class="form-control" id="personality">
+            <option value="greece">I'm very easy going, and love meeting new people!</option>
+            <option value="peru">I love adventure, and getting outside</option>
+            <option value="india">I'm very self contemplative, and enjoy finding beauty in the world</option>
+          </select>
+        </div>
+        <button id="submit" class="btn btn-success">Submit</button>
+      </form>
+      <div id="result">
+      </div>
+    </div>
+  </body>
+</html>
