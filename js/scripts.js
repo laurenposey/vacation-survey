@@ -10,6 +10,16 @@ var evalQuestion = function (res) {
   if (res==="india") indiaCount++;
 }
 
+var returnResult = function () {
+  if (greeceCount>peruCount && greeceCount>indiaCount) {
+    return "Greece."
+  } else if (peruCount>greeceCount && peruCount>indiaCount) {
+    return "Peru."
+  } else {
+    return "India."
+  }
+}
+
 // frontend
 
 $(document).ready(function(){
@@ -21,6 +31,6 @@ $(document).ready(function(){
     evalQuestion($("#food").val());
     evalQuestion($("#fabric").val());
 
-    
+    $("#result").text(returnResult());
   });
 });
