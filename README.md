@@ -10,7 +10,7 @@ _This webpage asks the user to answer some questions and returns a destination s
 
 ## Setup/Installation Requirements
 
-* _Use http://laurenposey.github.io/vacation-suggester/ to access this project's gh-page._
+* _Use http://laurenposey.github.io/vacation-survey/ to access this project's gh-page._
 
 ## Support and contact details
 
