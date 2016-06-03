@@ -10,43 +10,76 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Where should you take your next <span class="text-danger">Vacation</span>?</h1>
+      <h1 class="jumbotron text-center">Where should you take your next <span class="text-danger">Vacation</span>?</h1>
       <form id="vacaSurvey">
         <div>
-          <label>What's your favorite animal from the list below?</label>
-          <select class="form-control" id="animal">
-            <option value="peru">Alpaca</option>
-            <option value="greece">Goat</option>
-            <option value="india">Tiger</option>
-          </select>
-          <label>What activity sounds most appealing to you?</label>
-          <select class="form-control" id="activity">
-            <option value="india">Sightseeing</option>
-            <option value="greece">Shopping</option>
-            <option value="peru">Hiking</option>
-          </select>
-          <label>Which statement best describes your personality?</label>
-          <select class="form-control" id="personality">
-            <option value="peru">I love adventure, and getting outside</option>
-            <option value="india">I'm very self contemplative, and enjoy finding beauty in the world</option>
-            <option value="greece">I'm very easy going, and love meeting new people!</option>
-          </select>
-          <label>What dinner is most appealing to you?</label>
-          <select class="form-control" id="food">
-            <option value="greece">Spanakopita with Cubed Feta</option>
-            <option value="peru">Ceviche with Roasted Sweet Potatoes</option>
-            <option value="india">Chicken Curry and Chole Masala with Rice</option>
-          </select>
-          <label>What fabric do you prefer to wear?</label>
-          <select class="form-control" id="fabric">
-            <option value="india">Silk</option>
-            <option value="peru">Woven Alpaca Blends</option>
-            <option value="greece">Cotton</option>
-          </select>
+          <div class="prettyForm">
+            <label>What's your favorite animal from the list below?</label>
+            <select class="form-control" id="animal">
+              <option value="peru">Alpaca</option>
+              <option value="greece">Goat</option>
+              <option value="india">Tiger</option>
+            </select>
+          </div>
+          <div class="prettyForm">
+            <label>What activity sounds most appealing to you?</label>
+            <select class="form-control" id="activity">
+              <option value="india">Sightseeing</option>
+              <option value="greece">Shopping</option>
+              <option value="peru">Hiking</option>
+            </select>
+          </div>
+          <div class="prettyForm">
+            <label>Which statement best describes your personality?</label>
+            <select class="form-control" id="personality">
+              <option value="peru">I love adventure, and getting outside</option>
+              <option value="india">I'm very self contemplative, and enjoy finding beauty in the world</option>
+              <option value="greece">I'm very easy going, and love meeting new people!</option>
+            </select>
+          </div>
+          <div class="prettyForm">
+            <label>What dinner is most appealing to you?</label>
+            <select class="form-control" id="food">
+              <option value="greece">Spanakopita with Cubed Feta</option>
+              <option value="peru">Ceviche with Roasted Sweet Potatoes</option>
+              <option value="india">Chicken Curry and Chole Masala with Rice</option>
+            </select>
+          </div>
+          <div class="prettyForm">
+            <label>What fabric do you prefer to wear?</label>
+            <select class="form-control" id="fabric">
+              <option value="india">Silk</option>
+              <option value="peru">Alpaca Wool Blends</option>
+              <option value="greece">Cotton</option>
+            </select>
+          </div>
         </div>
-        <button id="submit" class="btn btn-success">Submit</button>
+        <div class="prettyForm">
+          <button id="submit" class="btn btn-success">Submit</button>
+        </div>
       </form>
       <div id="result">
+        <div id="greece">
+          <h1>You should go to Greece!</h1>
+          <img class="boxmodel" src="img/greece.jpeg" alt="Greece"/>
+          <p>
+            greece
+          </p>
+        </div>
+        <div id="peru">
+          <h1>You should go to Peru!</h1>
+          <img class="boxmodel" src="img/peru.jpeg" alt="Peru"/>
+          <p>
+            peru
+          </p>
+        </div>
+        <div id="india">
+            <h1>You should go to India!</h1>
+            <img class="boxmodel" src="img/india.jpeg" alt="India"/>
+            <p>
+              india
+            </p>
+        </div>
       </div>
     </div>
   </body>

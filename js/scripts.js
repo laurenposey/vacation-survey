@@ -12,11 +12,11 @@ var evalQuestion = function (res) {
 
 var returnResult = function () {
   if (greeceCount>peruCount && greeceCount>indiaCount) {
-    return "Greece."
+    $("#greece").show();
   } else if (peruCount>greeceCount && peruCount>indiaCount) {
-    return "Peru."
+    $("#peru").show();
   } else {
-    return "India."
+    $("#india").show();
   }
 }
 
@@ -30,6 +30,7 @@ $(document).ready(function(){
     evalQuestion($("#personality").val());
     evalQuestion($("#food").val());
     evalQuestion($("#fabric").val());
+
 
     $("#result").text(returnResult());
   });
